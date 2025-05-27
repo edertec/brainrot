@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzabot 🍕 Brainrot Italiano</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+<!-- Versão compatível para script clássico -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>🍕 Pizzabot - Cadastro dos Verdadeiros Apreciadores 🍕</h1>
+    <div class="form-container">
+      <input type="text" id="nome" placeholder="Seu nome">
+      <select id="pizza">
+        <option value="">Escolha sua pizza favorita</option>
+        <option value="Margherita">Margherita</option>
+        <option value="Calabresa">Calabresa</option>
+        <option value="Quatro Queijos">Quatro Queijos</option>
+        <option value="Portuguesa">Portuguesa</option>
+        <option value="Carbonara">Carbonara</option>
+      </select>
+      <select id="nivel">
+        <option value="">Nível de Brainrot Italiano</option>
+        <option value="Normal 🍕">Normal 🍕</option>
+        <option value="Fã de Pizza 🧀">Fã de Pizza 🧀</option>
+        <option value="Obsessivo 🍝">Obsessivo 🍝</option>
+        <option value="Brainrot Total 🤯🍕">Brainrot Total 🤯🍕</option>
+      </select>
+      <button onclick="cadastrarPizzaLover()">Cadastrar</button>
+    </div>
+
+    <h2>Lista de Apreciadores</h2>
+    <div id="lista"></div>
+  </div>
+  
+  <script src="secrets.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
